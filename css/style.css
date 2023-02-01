@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (min-width: 992px) {
+   
+body{
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+}
+
+.header_banner{
+    display: flex;
+    place-content: space-between;
+}
+
+.header_title{
+    /** **/
+}
+
+#main{
+    max-width: 1400px;
+    display: flex;
+}
+
+.title{
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+#housings{
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 626px;
+    max-width: 880px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    place-content: space-between;
+}
+
+.card_main_grid{
+    display: flex;
+    flex-flow: wrap;
+    place-content: space-between;
+    background-color: #F0F0F0;
+}
+
+.card_main{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgb(180, 176, 176);
+}
+
+.subtitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.show_card_main_picture{
+    height: 124px;
+    width: 246px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#popular{
+    max-width: 420px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_sponsored{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.show_card_sponsored_picture{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 144px;
+    width: 137px;
+}
+
+}

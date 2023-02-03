@@ -7,21 +7,103 @@
    
 body{
     max-width: 1400px;
-    margin: 0;
-    padding: 0;
 }
-
+/** Header CSS **/
+#header{
+    position: static;
+}
+/** Banner **/
 .header_banner{
     display: flex;
     place-content: space-between;
+    max-height: 50px;
 }
 
-.header_title{
-    /** **/
+.landing_page_link{
+    padding: 30px;
 }
+
+.landing_page_link>img{
+    min-width: 96px;
+    max-width: 96px;
+}
+
+.hook{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+}
+
+.header_hook_link{
+    list-style: none;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    min-height: 120px;
+    max-height: 120px;
+    width: 113px;
+}
+
+.header_hook_link:hover{
+    list-style: none;
+    padding: 20px;
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+/** Title **/
+.header_title{
+    padding: 30px;
+}
+
+.header_title>h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.header_title>p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/** Search field **/
+
+
+/** Filters **/
+.filters{
+    display: flex;
+    flex-direction: row;
+    place-content: space-around;
+}
+
+.filters_title{
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+}
+
+.filter_button{
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #D9D9D9;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.filter_button:hover{
+    background-color: #DEEBFF;
+}
+
+/** Main CSS **/
 
 #main{
-    max-width: 1400px;
+    max-width: 100%;
     display: flex;
 }
 
@@ -31,6 +113,8 @@ body{
     font-weight: 700;
     line-height: 26px;
 }
+
+/** Housings grid **/
 
 #housings{
     background-color: #F2F2F2;
@@ -54,11 +138,13 @@ body{
 
 .card_main{
     background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 5px rgb(180, 176, 176);
+    box-shadow: 5px 5px 5px rgb(208, 201, 201);
 }
 
 .subtitle{
@@ -75,27 +161,54 @@ body{
     border-top-right-radius: 20px;
 }
 
+/** Sponsored array **/
+
 #popular{
     max-width: 420px;
     border-radius: 20px;
     margin: 10px;
-    padding: 5px;
+    padding: 20px;
     background-color: #F0F0F0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
-.card_sponsored{
+.card_sponsored_array{
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    width: 350px;
 }
+
+.sponsored{
+    display: flex;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
 
 .show_card_sponsored_picture{
+    height: 144px;
+    min-width: 137px;
+    max-width: 137px;
+    padding: 5px;
+    background-color: #FFFFFF;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    height: 144px;
-    width: 137px;
+    box-shadow: 5px 5px 5px rgb(208, 201, 201);
 }
+
+.info_card_sponsored{
+    padding: 10px;
+    max-height: 144px;
+    width: 213px;
+    background-color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(208, 201, 201);
+}
+
+/** Activity list **/
 
 }

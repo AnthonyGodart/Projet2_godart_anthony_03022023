@@ -8,6 +8,7 @@
 body{
     max-width: 1400px;
     place-content: space-around;
+    justify-content: center;
 }
 /** Header CSS **/
 #header{
@@ -137,6 +138,10 @@ body{
     margin-right: 20px;
 }
 
+.filter_button>i{
+    color: #0065FC;
+}
+
 .filter_button:hover{
     background-color: #DEEBFF;
 }
@@ -220,6 +225,16 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.card_sponsored_title{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+}
+
+.card_sponsored_title>i{
+    color: #0065FC;
 }
 
 .card_sponsored_array{

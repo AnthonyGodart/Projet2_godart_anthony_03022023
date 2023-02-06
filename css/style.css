@@ -247,4 +247,26 @@ body{
 
 /** Activity list **/
 
+#activities{
+    display: flex;
+    flex-direction: column;
+}
+
+.activities_list{
+    display: flex;
+    flex-direction: row;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.activity>img{
+    height: 70%;
+    min-width: 300px;
+    max-width: 300px;
+}
+
 }

@@ -177,6 +177,7 @@ body{
     color: #000000;
     text-decoration: none;
     border-radius: 20px;
+    margin: 5px;
     padding: 5px;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px rgb(208, 201, 201);
@@ -194,6 +195,11 @@ body{
     width: 246px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.rating{
+    color: #0065FC;
+    font-size: small;
 }
 
 /** Sponsored array **/

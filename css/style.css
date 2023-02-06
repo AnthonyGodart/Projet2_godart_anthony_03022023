@@ -7,6 +7,7 @@
    
 body{
     max-width: 1400px;
+    place-content: space-around;
 }
 /** Header CSS **/
 #header{
@@ -74,6 +75,7 @@ body{
 .search_form{
     display: flex;
     flex-direction: row;
+    padding-left: 30px;
 }
 
 .map_logo{
@@ -110,13 +112,16 @@ body{
 .filters{
     display: flex;
     flex-direction: row;
-    place-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .filters_title{
     background-color: #FFFFFF;
     font-weight: 700;
     font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: none;
 }
 

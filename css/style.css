@@ -96,6 +96,10 @@ body{
     border-radius: 0;
 }
 
+.search_field:focus-visible{
+    outline: none;
+}
+
 .search{
     background-color: #0065FC;
     color: #FFFFFF;

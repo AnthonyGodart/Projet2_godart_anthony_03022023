@@ -126,6 +126,10 @@ body{
     border-radius: 0 15px 15px 0;
 }
 
+.search>i{
+    display: none;
+}
+
 /** Filters bar **/
 
 .filters{
@@ -220,6 +224,7 @@ body{
     padding: 5px;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px #D9D9D9;
+    width: 30%;
 }
 
 .subtitle{
@@ -231,7 +236,7 @@ body{
 
 .show-card-main-picture{
     height: 124px;
-    width: 246px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -301,6 +306,7 @@ body{
 #activities{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #activities>h2{
@@ -310,19 +316,17 @@ body{
 .activities-list{
     display: flex;
     flex-direction: row;
-    place-content: space-between;
+    justify-content: space-between;
     padding: 30px;
 }
 
 .activity{
     display: flex;
     flex-direction: column;
-    width: 250px;
     height: 350px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #D9D9D9;
-    text-decoration: none;
-    color: #000000;
+    width: 23%;
 }
 
 .activity:hover{
@@ -330,9 +334,8 @@ body{
 }
 
 .activity>img{
-    height: 300px;
-    min-width: 250px;
-    max-width: 250px;
+    height: 85%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -414,11 +417,6 @@ body{
     width: 113px;
 }
 
-/**.header-hook-link:hover{
-    border-top: 3px solid #0065FC;
-    color: #0065FC;
-}**/
-
 /** Title **/
 .header-title{
     padding: 30px;
@@ -479,6 +477,10 @@ body{
     border-radius: 0 15px 15px 0;
 }
 
+.search>i{
+    display: none;
+}
+
 /** Filters bar **/
 .filters{
     display: flex;
@@ -492,20 +494,18 @@ body{
     font-weight: 700;
     font-size: 18px;
     border: none;
+    max-width: 150px;
 }
 
 .filter-button{
-    padding: 10px 30px;
+    padding: 10px 10px;
     background-color: #FFFFFF;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-}
-
-.filter-button:hover{
-    background-color: #DEEBFF;
+    max-width: 30%;
 }
 
 .info-pannel{
@@ -570,6 +570,7 @@ body{
     padding: 5px;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px #D9D9D9;
+    width: 30%;
 }
 
 .subtitle{
@@ -581,7 +582,7 @@ body{
 
 .show-card-main-picture{
     height: 124px;
-    width: 246px;
+    width: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -596,9 +597,9 @@ body{
     box-sizing: border-box;
     border-radius: 20px;
     height: fit-content;
-    width: 100%;
+    max-width: 100%;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -618,14 +619,14 @@ body{
 
 .sponsored{
     display: flex;
-    padding: 10px;
+    padding: 5px;
     color: #000000;
     text-decoration: none;
-    max-width: 30%;
+    max-width: 31%;
 }
 
 .show-card-sponsored-picture{
-    height: 144px;
+    max-height: 144px;
     min-width: 105px;
     max-width: 105px;
     padding: 5px;
@@ -674,10 +675,6 @@ body{
     color: #000000;
 }
 
-.activity:hover{
-    scale: 1.05;
-}
-
 .activity>img{
     height: 80%;
     max-width: 100%;
@@ -720,5 +717,342 @@ footer{
 }
 
 @media screen and (max-width: 767px){
+
+    body{
+        margin: 0 auto;
+        place-content: space-around;
+    }
     
+    /** Here comes the Header's CSS **/
+    
+    /** Banner **/
+    .header-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .landing-page-link{
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+    }
+    
+    .landing-page-link>img{
+        min-width: 96px;
+        max-width: 96px;
+    }
+    
+    .hook{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .header-hook-link{
+        box-sizing: border-box;
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+        height: 100px;
+        width: 50%;
+        border-bottom: 3px solid #0065FC;
+    }
+    
+    /** Title **/
+    .header-title{
+        padding: 30px;
+    }
+    
+    .header-title>h1{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .header-title>p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    /** Search field **/
+    .search-form{
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+    }
+    
+    .map-logo{
+        display: flex;
+        background-color: #D9D9D9;
+        height: 49px;
+        width: 50px;
+        border-radius: 15px 0 0 15px;
+        border: 1px solid #D9D9D9;
+        font-size: 20px;
+        align-items: center;
+        place-content: space-around;
+    }
+    
+    .search-field{
+        background-color: #FFFFFF;
+        padding-left: 5px;
+        height: 49px;
+        border: 1px solid #D9D9D9;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 0;
+    }
+    
+    .search-field:focus-visible{
+        outline: none;
+    }
+    
+    .search{
+        background-color: #0065FC;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 18px;
+        border: none;
+        padding: 15px 16px;
+        border-radius: 0 15px 15px 0;
+    }
+    
+    .search>span{
+        display: none;
+    }
+
+    /** Filters bar **/
+    .filters{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: space-evenly;
+    }
+    
+    .filters-title{
+        background-color: #FFFFFF;
+        font-weight: 700;
+        font-size: 18px;
+        border: none;
+        max-width: 150px;
+    }
+    
+    .filter-button{
+        padding: 10px 10px;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        border: 2px solid #D9D9D9;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        max-width: 30%;
+    }
+    
+    .info-pannel{
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+        gap: 10px;
+    }
+    
+    .info-logo{
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #D9D9D9;
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    /** Here comes the Main's CSS **/
+    
+    #main{
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title{
+        padding: 20px;
+        font-style: normal;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    
+    /** Housings grid **/
+    #housings{
+        background-color: #F2F2F2;
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 626px;
+        max-width: 880px;
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        place-content: space-between;
+    }
+    
+    .card-main-grid{
+        display: flex;
+        flex-flow: wrap;
+        place-content: space-between;
+        background-color: #F0F0F0;
+    }
+    
+    .card-main{
+        background-color: #FFFFFF;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px #D9D9D9;
+        width: 30%;
+    }
+    
+    .subtitle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .show-card-main-picture{
+        height: 124px;
+        width: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .rating{
+        font-size: small;
+    }
+    
+    /** Sponsored array **/
+    #popular{
+        background-color: #F0F0F0;
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: fit-content;
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-sponsored-title{
+        display: flex;
+        flex-direction: row;
+        place-content: space-between;
+        align-items: baseline;
+    }
+    
+    .card-sponsored-array{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .sponsored{
+        display: flex;
+        padding: 5px;
+        color: #000000;
+        text-decoration: none;
+        max-width: 31%;
+    }
+    
+    .show-card-sponsored-picture{
+        max-height: 144px;
+        min-width: 105px;
+        max-width: 105px;
+        padding: 5px;
+        background-color: #FFFFFF;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 5px 5px 5px #D9D9D9;
+    }
+    
+    .info-card-sponsored{
+        padding: 10px;
+        max-height: 144px;
+        width: 141px;
+        background-color: #FFFFFF;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 5px 5px 5px #D9D9D9;
+    }
+    
+    /** Activity list **/
+    
+    #activities{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #activities>h2{
+        padding: 20px 0 0 30px;
+    }
+    
+    .activities-list{
+        display: flex;
+        flex-direction: row;
+        place-content: space-between;
+        padding: 30px;
+    }
+    
+    .activity{
+        display: flex;
+        flex-direction: column;
+        width: 182px;
+        height: 267px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #D9D9D9;
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .activity>img{
+        height: 80%;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    
+    .activity>h3{
+        padding: 5px 0 0 10px;
+    }
+    
+    /** Here comes the Footer's CSS **/
+    
+    footer{
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+        padding: 20px 40px;
+        list-style: none;
+    }
+    
+    .footer-nav-list{
+        box-sizing: border-box;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .footer-nav-list>h3{
+        line-height: 30px;
+    }
+    
+    .footer-nav-list>ul>li{
+        list-style: none;
+        line-height: 30px;
+    }
+     
 }

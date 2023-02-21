@@ -227,6 +227,10 @@ body{
     width: 30%;
 }
 
+.card-main:hover{
+    scale: 1.05;
+}
+
 .subtitle{
     font-style: normal;
     font-weight: 700;
@@ -278,6 +282,10 @@ body{
     padding: 5px;
     color: #000000;
     text-decoration: none;
+}
+
+.sponsored:hover{
+    scale: 1.05;
 }
 
 .show-card-sponsored-picture{

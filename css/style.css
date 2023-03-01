@@ -665,6 +665,9 @@ body{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 5px 5px 5px #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /** Activity list **/
@@ -1032,6 +1035,9 @@ footer{
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         box-shadow: 5px 5px 5px #D9D9D9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     /** Activity list **/

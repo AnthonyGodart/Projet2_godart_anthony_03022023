@@ -1,3 +1,4 @@
+/** Reset CSS **/
 *{
     margin: 0;
     padding: 0;
@@ -8,16 +9,15 @@
 .blue{
     color: #0065FC;
 }
-
 .grey{
     color: #D9D9D9;
 }
-
 .link{
     text-decoration: none;
     color: #000000;
 }
 
+/** Desktop **/
 @media screen and (min-width: 992px){
 
 body{
@@ -58,6 +58,7 @@ body{
     min-height: 120px;
     max-height: 120px;
     width: 113px;
+    border-top: 3px solid transparent;
 }
 
 .header-hook-link:hover{
@@ -387,6 +388,7 @@ footer{
 
 }
 
+/** Tablet **/
 @media  screen and (max-width: 991px) and (min-width: 768px) {
 
 body{
@@ -741,6 +743,7 @@ footer{
     
 }
 
+/** Mobile **/
 @media screen and (max-width: 767px){
 
     body{

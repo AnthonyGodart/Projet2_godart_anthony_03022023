@@ -681,13 +681,13 @@ body{
     display: flex;
     flex-direction: row;
     place-content: space-between;
-    padding: 30px;
+    padding: 10px;
 }
 
 .activity{
     display: flex;
     flex-direction: column;
-    width: 182px;
+    width: 11em;
     height: 267px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #D9D9D9;

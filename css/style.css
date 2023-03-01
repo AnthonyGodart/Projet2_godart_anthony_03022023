@@ -501,30 +501,30 @@ body{
     padding: 10px;
     align-items: baseline;
     margin: 0;
+    width: 100%;
 }
 
 .filters-grid{
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
 }
 
 .filters-title{
     background-color: #FFFFFF;
     padding: 10px 0;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1em;
     border: none;
-    max-width: 150px;
+    max-width: 20%;
 }
 
 .filter-button{
-    padding: 10px 10px;
+    padding: 0.5em;
     background-color: #FFFFFF;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
     font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 1em;
     max-width: 30%;
 }
 
@@ -547,7 +547,7 @@ body{
 /** Here comes the Main's CSS **/
 
 #main{
-    max-width: 1400px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }

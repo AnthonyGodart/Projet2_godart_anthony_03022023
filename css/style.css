@@ -1042,14 +1042,15 @@ footer{
     }
     
     #activities>h2{
-        padding: 20px 0 0 30px;
+        padding: 20px 0 0 20px;
     }
     
     .activities-list{
         display: flex;
         flex-direction: column;
         place-content: space-between;
-        padding: 30px;
+        align-items: center;
+        padding: 20px;
     }
     
     .activity{

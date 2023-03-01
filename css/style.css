@@ -181,8 +181,10 @@ body{
 /** Here comes the Main's CSS **/
 
 #main{
-    max-width: 1400px;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .title{

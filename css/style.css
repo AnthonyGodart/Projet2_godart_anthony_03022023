@@ -693,6 +693,7 @@ body{
     box-shadow: 5px 5px 5px #D9D9D9;
     text-decoration: none;
     color: #000000;
+    justify-content: space-evenly;
 }
 
 .activity>img{
